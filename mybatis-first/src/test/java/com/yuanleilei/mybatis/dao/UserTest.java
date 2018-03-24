@@ -12,12 +12,12 @@ public class UserTest {
     @Test
     public void insertPerson() {
         sqlSession = MybatisUtil.getSqlSession();
-        int id = 10000;
+        //int id = 10000;
         String userName = "test";
         int age = 18;
         String mobilePhone = "18000000000";
         Person person = new Person();
-        person.setId(id);
+        //person.setId(id);
         person.setAge(age);
         person.setUserName(userName);
         person.setMobilePhone(mobilePhone);
@@ -35,7 +35,7 @@ public class UserTest {
     @Test
     public void queryById() {
         sqlSession = MybatisUtil.getSqlSession();
-        int id = 1;
+        int id = 10001;
         try {
             Person person = sqlSession.selectOne("queryById", id);
 
