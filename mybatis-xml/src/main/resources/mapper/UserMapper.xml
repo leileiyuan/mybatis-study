@@ -16,4 +16,15 @@
         select * from sys_user where id = #{id}
     </select>
 
+    <insert id="save" parameterType="SysUser">
+        insert into sys_user(
+          user_name, user_password, user_email,
+          user_info, head_img, create_time
+          )
+        values(
+          #{userName}, #{userPassword}, #{userEmail},
+          #{userInfo}, #{headImg,jdbcType=BLOB}, #{createTime,jdbcType=TIMESTAMP}
+          )
+    </insert>
+
 </mapper>

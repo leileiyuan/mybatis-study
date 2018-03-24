@@ -11,7 +11,7 @@
         <setting name="logImpl" value="LOG4J"/>
     </settings>
 
-    
+
     <typeAliases>
         <package name="com.yuanleilei.mybatis.model"/>
     </typeAliases>
@@ -32,7 +32,6 @@
     </environments>
 
     <mappers>
-       <!-- <package name="com.yuanleilei.mybatis.mapper"/>-->
         <mapper resource="mapper/PrivilegeMapper.xml"/>
         <mapper resource="mapper/RoleMapper.xml"/>
         <mapper resource="mapper/RolePrivilegeMapper.xml"/>
